@@ -111,12 +111,10 @@ export class Url {
 }
 
 export namespace handlers {
-  interface IHtmlLinkParserOptions {
+  function htmlLinkParser(opts: {
     hostnames?: string[],
     urlFilter?: (url: string, pageUrl?: string) => boolean
-  }
-
-  function htmlLinkParser(opts: IHtmlLinkParserOptions): (context: { [key: string]: any, body: Buffer | string }) => any;
+  }): (context: { [key: string]: any, body: Buffer | string }) => any;
 
   function robotsParser(opts: any): any;
 
