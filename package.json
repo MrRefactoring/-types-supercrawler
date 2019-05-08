@@ -1,0 +1,19 @@
+{
+  "name": "@types/supercrawler",
+  "version": "1.0.0",
+  "description": "Types for supercrawler",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRefactoring/types-supercrawler.git"
+  },
+  "keywords": [],
+  "author": "Vladislav Tupikin <mrrefactoring@yandex.ru>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MrRefactoring/types-supercrawler/issues"
+  },
+  "homepage": "https://github.com/MrRefactoring/types-supercrawler#readme"
+}

@@ -1,1 +1,1 @@
-# -types-supercrawler
+# @types/supercrawler
