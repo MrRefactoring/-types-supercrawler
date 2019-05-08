@@ -10,7 +10,9 @@ export class Crawler {
     request?: any
   });
 
-  addHandler(contentType: any, handler: any, ...args: any[]): any;
+  addHandler(handler: Function): boolean;
+
+  addHandler(contentType: string, handler: Function): boolean;
 
   addListener(type: any, listener: any): any;
 
@@ -18,17 +20,17 @@ export class Crawler {
 
   eventNames(): any;
 
-  getConcurrentRequestsLimit(): any;
+  getConcurrentRequestsLimit(): number;
 
-  getInterval(): any;
+  getInterval(): number;
 
   getMaxListeners(): any;
 
-  getRequestOptions(): any;
+  getRequestOptions(): { [key: string]: string };
 
   getUrlList(): UrlList;
 
-  getUserAgent(): any;
+  getUserAgent(): string;
 
   listenerCount(type: any): any;
 
@@ -52,7 +54,7 @@ export class Crawler {
 
   setMaxListeners(n: any): any;
 
-  start(): any;
+  start(): boolean;
 
   stop(): void;
 }
