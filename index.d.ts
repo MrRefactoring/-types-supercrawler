@@ -10,6 +10,8 @@ export class Crawler {
     request?: any
   });
 
+  handlers: typeof handlers;
+
   addHandler(handler: Function): boolean;
 
   addHandler(contentType: string, handler: Function): boolean;
