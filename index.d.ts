@@ -10,8 +10,6 @@ export class Crawler {
     request?: any
   });
 
-  handlers: typeof handlers;
-
   addHandler(handler: Function): boolean;
 
   addHandler(contentType: string, handler: Function): boolean;
@@ -111,7 +109,7 @@ export class Url {
 }
 
 export namespace handlers {
-  function htmlLinkParser(opts: {
+  function htmlLinkParser(opts?: {
     hostnames?: string[],
     urlFilter?: (url: string, pageUrl?: string) => boolean
   }): (context: { [key: string]: any, body: Buffer | string }) => any;
